@@ -11,6 +11,7 @@ Date Modified: 4/05/2017
 *************************************************************************************/
 #include "Name.h"
 #include <iomanip>
+#include <algorithm>
 using namespace std;
 
 int main()
@@ -44,7 +45,7 @@ int main()
 		nameList.push_back(name);
 	}
 
-
+	sort(nameList.begin(), nameList.end());
 
 	dataIn.close();
 	//dataOut.open("sortedNames.txt");
