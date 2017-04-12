@@ -6,7 +6,7 @@
 using namespace std;
 int getNameScore(vector <string > list, int pos);
 int  getPxNScore(vector <string> list, int pos);
-int getTotalSum(vector <string> list, int pos, int curSum);
+int getTotalSum(vector <string> list, int pos);
 
 
 int getNameScore(vector <string> list, int pos)
@@ -17,11 +17,11 @@ int getNameScore(vector <string> list, int pos)
 
 int  getPxNScore(vector <string> list, int pos)
 {
-	
-	return 0;
-}
-int getTotalSum(vector <string> list, int pos, int curSum)
-{
+	return getNameScore(list, pos) * (pos + 1);
 
-	return 0;
+}
+int getTotalSum(vector <string> list, int pos)
+{
+	return getPxNScore(list, pos);
+
 }
