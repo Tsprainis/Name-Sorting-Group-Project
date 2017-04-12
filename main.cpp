@@ -47,14 +47,14 @@ int main()
 
 
 	dataIn.close();
-	dataOut.open("sortedNames.txt");
-	int curSum = 0;
-	for (int i = 0; i < nameList.size(); i++)
-	{
-		curSum = getTotalSum(nameList, i, curSum);
-		dataOut << setw(15) << left << "Position: " << i+1 << setw(8) << left << "\t Name:" << setw(15) << left << nameList[i] << setw(16) << left << "\tScore:" << getNameScore(nameList, i) << setw(15) << left <<
-			"\tN*P: " << getPxNScore(nameList, i) << setw(19) << left << "\tCurrent total Sum: " << setw(15) << left << curSum << endl;
-	}
-	dataOut.close();
+	//dataOut.open("sortedNames.txt");
+	//int curSum = 0;
+	//for (int i = 0; i < nameList.size(); i++)
+	//{
+	//	curSum = getTotalSum(nameList, i, curSum);
+	//	dataOut << setw(15) << left << "Position: " << i+1 << setw(8) << left << "\t Name:" << setw(15) << left << nameList[i] << setw(16) << left << "\tScore:" << getNameScore(nameList, i) << setw(15) << left <<
+	//		"\tN*P: " << getPxNScore(nameList, i) << setw(19) << left << "\tCurrent total Sum: " << setw(15) << left << curSum << endl;
+	//}
+	//dataOut.close();
 	return 0;
 }
